@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cliftons | Projects</title>
+</head>
+<body>
+    <nav class="nav-list">
+        <a href="index.html" class="logo" aria-label="Trion home">
+            <span class="logo-mark">C</span>
+            <span class="logo-text">
+                <span class="logo-name">Cliftons</span>
+                <span class="logo-role">Developer Portfolio</span>
+            </span>
+        </a>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contact.html">Contact Me</a></li>
+            <li><a href="projects.html" class="nav-active">Projects</a></li>
+            <li><a href="about.html">About Me</a></li>
+        </ul>
+    </nav>
+
+    <main class="page-shell">
+         <style>
+
+/* ================================
+   CLIFTONS PROJECTS SECTION
+================================ */
+
+.cliftons-projects {
+    width: 100%;
+    padding: 55px 4% 70px;
+    background: #fbf6ed;
+    color: #332016;
+    font-family: Georgia, "Times New Roman", serif;
+    box-sizing: border-box;
+}
+
+.cliftons-projects *,
+.cliftons-projects *::before,
+.cliftons-projects *::after {
+    box-sizing: border-box;
+}
+
+/* PROJECTS LABEL */
+
+.cliftons-label {
+    text-align: center;
+    color: #c95b2d;
+    letter-spacing: 5px;
+    font-size: 13px;
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+
+/* MAIN HEADING */
+
+.cliftons-title {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 56px;
+    line-height: 0.98;
+    font-weight: 700;
+    color: #332016;
+}
+
+/* INTRO */
+
+.cliftons-intro {
+    max-width: 900px;
+    margin: 25px auto 48px;
+    text-align: center;
+    font-size: 17px;
+    line-height: 1.55;
+    color: #5d5048;
+}
+
+/* PROJECT GRID */
+
+.cliftons-grid {
+    max-width: 1625px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+/* CARD */
+
+.cliftons-card {
+    background: #fffdf9;
+    border: 1px solid #e9dfd2;
+    border-radius: 20px;
+    overflow: hidden;
+
+    box-shadow:
+        0 12px 30px rgba(75, 50, 30, 0.08);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.cliftons-card:hover {
+    transform: translateY(-7px);
+
+    box-shadow:
+        0 20px 40px rgba(75, 50, 30, 0.13);
+}
+
+/* PROJECT IMAGE */
+
+.cliftons-project-image {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    display: block;
+}
+
+/* CARD CONTENT */
+
+.cliftons-content {
+    padding: 18px 22px 24px;
+}
+
+/* CATEGORY */
+
+.cliftons-type {
+    color: #c95b2d;
+    letter-spacing: 4px;
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+/* PROJECT NAME */
+
+.cliftons-name {
+    margin: 0 0 12px;
+
+    font-size: 25px;
+    line-height: 1.05;
+    font-weight: 700;
+
+    color: #332016;
+}
+
+/* DESCRIPTION */
+
+.cliftons-description {
+    margin: 0 0 18px;
+
+    color: #62544b;
+
+    font-size: 16px;
+    line-height: 1.55;
+
+    min-height: 74px;
+}
+
+/* DOMAIN */
+
+.cliftons-domain {
+    display: block;
+
+    color: #c94f22;
+
+    text-decoration: none;
+
+    font-weight: 700;
+    font-size: 15px;
+
+    margin-bottom: 18px;
+
+    transition: 0.2s ease;
+}
+
+.cliftons-domain:hover {
+    color: #9f3817;
+    text-decoration: underline;
+}
+
+/* LIVE WEBSITE BUTTON */
+
+.cliftons-button {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    padding: 13px 18px;
+
+    border: 1.5px solid #c95b2d;
+    border-radius: 30px;
+
+    background: #fffdf9;
+
+    color: #c95b2d;
+
+    text-decoration: none;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: 700;
+    font-size: 15px;
+
+    transition:
+        background 0.25s ease,
+        color 0.25s ease,
+        transform 0.25s ease;
+}
+
+.cliftons-button:hover {
+    background: #c95b2d;
+    color: #ffffff;
+
+    transform: translateY(-2px);
+}
+
+/* ARROW */
+
+.cliftons-arrow {
+    font-size: 19px;
+    line-height: 1;
+}
+
+
+/* =================================
+   TABLET
+================================= */
+
+@media (max-width: 1100px) {
+
+    .cliftons-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .cliftons-title {
+        font-size: 46px;
+    }
+
+}
+
+
+/* =================================
+   MOBILE
+================================= */
+
+@media (max-width: 650px) {
+
+    .cliftons-projects {
+        padding: 40px 18px 50px;
+    }
+
+    .cliftons-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .cliftons-title {
+        font-size: 38px;
+        line-height: 1;
+    }
+
+    .cliftons-intro {
+        font-size: 15px;
+        margin-bottom: 32px;
+    }
+
+    .cliftons-project-image {
+        height: 200px;
+    }
+
+}
+
+</style>
+
+
+.<style>
+.cliftons-projects {
+    width: 100%;
+    padding: 55px 4% 70px;
+    background: #fbf6ed;
+    color: #332016;
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+.cliftons-projects *,
+.cliftons-projects *::before,
+.cliftons-projects *::after {
+    box-sizing: border-box;
+}
+
+.cliftons-label {
+    text-align: center;
+    color: #c95b2d;
+    letter-spacing: 5px;
+    font-size: 13px;
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+
+.cliftons-title {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 56px;
+    line-height: 0.98;
+    font-weight: 700;
+}
+
+.cliftons-intro {
+    max-width: 900px;
+    margin: 25px auto 48px;
+    text-align: center;
+    font-size: 17px;
+    line-height: 1.55;
+    color: #5d5048;
+}
+
+.cliftons-grid {
+    max-width: 1625px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.cliftons-card {
+    background: #fffdf9;
+    border: 1px solid #e9dfd2;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 12px 30px rgba(75,50,30,.08);
+    transition: .3s ease;
+}
+
+.cliftons-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 20px 40px rgba(75,50,30,.13);
+}
+
+.cliftons-project-image {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    display: block;
+}
+
+.cliftons-content {
+    padding: 18px 22px 24px;
+}
+
+.cliftons-type {
+    color: #c95b2d;
+    letter-spacing: 4px;
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.cliftons-name {
+    margin: 0 0 12px;
+    font-size: 25px;
+    line-height: 1.05;
+    color: #332016;
+}
+
+.cliftons-description {
+    margin: 0 0 18px;
+    color: #62544b;
+    font-size: 16px;
+    line-height: 1.55;
+    min-height: 74px;
+}
+
+.cliftons-domain {
+    display: block;
+    color: #c94f22;
+    text-decoration: none !important;
+    font-weight: 700;
+    font-size: 15px;
+    margin-bottom: 18px;
+}
+
+.cliftons-button {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    padding: 13px 18px;
+
+    border: 1.5px solid #c95b2d;
+    border-radius: 30px;
+
+    background: #fffdf9;
+    color: #c95b2d !important;
+
+    text-decoration: none !important;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: 700;
+    font-size: 15px;
+
+    cursor: pointer;
+
+    transition: .25s ease;
+}
+
+.cliftons-button:hover {
+    background: #c95b2d;
+    color: white !important;
+}
+
+.cliftons-arrow {
+    font-size: 19px;
+}
+
+
+/* TABLET */
+
+@media(max-width:1100px) {
+
+    .cliftons-grid {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .cliftons-title {
+        font-size: 46px;
+    }
+
+}
+
+
+/* MOBILE */
+
+@media(max-width:650px) {
+
+    .cliftons-projects {
+        padding: 40px 18px 50px;
+    }
+
+    .cliftons-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .cliftons-title {
+        font-size: 38px;
+    }
+
+    .cliftons-intro {
+        font-size: 15px;
+    }
+
+}
+</style>
+
+
+<section class="cliftons-projects">
+
+    <div class="cliftons-label">
+        PROJECTS
+    </div>
+
+    <h1 class="cliftons-title">
+        Work that reflects how I<br>
+        think, build, and improve.
+    </h1>
+
+    <p class="cliftons-intro">
+        These projects highlight my interest in user experience,
+        clean development, and practical solutions.
+    </p>
+
+
+    <div class="cliftons-grid">
+
+
+        <!-- CLASSY -->
+
+        <article class="cliftons-card">
+
+            <img
+                class="cliftons-project-image"
+                src="c1.png"
+                alt="Classy Website"
+            >
+
+            <div class="cliftons-content">
+
+                <div class="cliftons-type">
+                    WORDPRESS
+                </div>
+
+                <h2 class="cliftons-name">
+                    Classy Bistro Restuarant
+                    Home of Sushis and Burgers
+                </h2>
+
+                <p class="cliftons-description">
+                     A stylish restaurant website focused on **sushi and burgers**, 
+                     having vibrant continental foods imagery with a premium dark design.
+                      It showcases the menu and creates an engaging experience 
+                      for customers to explore, and discover signature dishes, 
+                      and place orders easily.
+
+                <a
+                    class="cliftons-domain"
+                    href="https://clause.infinityfree.io/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    🌐 clause.infinityfree.io
+                </a>
+
+                <a
+                    class="cliftons-button"
+                    href="https://clause.infinityfree.io/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    View Live Website
+                    <span class="cliftons-arrow">↗</span>
+                </a>
+
+            </div>
+
+        </article>
+
+
+        <!-- JAZMINE -->
+
+        <article class="cliftons-card">
+
+            <img
+                class="cliftons-project-image"
+                src="c2.png"
+                alt="Jazmine Website"
+            >
+
+            <div class="cliftons-content">
+
+                <div class="cliftons-type">
+                    WORDPRESS
+                </div>
+
+                <h2 class="cliftons-name">
+                    Jeizzy Dental Clinic 
+                </h2>
+
+                <p class="cliftons-description">
+                  A modern, responsive dental clinic website designed to create 
+                  a welcoming and professional online experience for patients.
+                   The website showcases dental services, introduces the clinic and its team,
+                    provides essential contact information, having more details and makes it easy for patients
+                     to get in touch or request an appointment.
+                </p>
+
+                <a
+                    class="cliftons-domain"
+                    href="https://jazmine.infinityfree.io/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    🌐 jazmine.infinityfree.io
+                </a>
+
+                <a
+                    class="cliftons-button"
+                    href="https://jazmine.infinityfree.io/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    View Live Website
+                    <span class="cliftons-arrow">↗</span>
+                </a>
+
+            </div>
+
+        </article>
+
+
+        <!-- GENESIS -->
+
+        <article class="cliftons-card">
+
+            <img
+                class="cliftons-project-image"
+                src="c3.png"
+                alt="Genesis Website"
+            >
+
+            <div class="cliftons-content">
+
+                <div class="cliftons-type">
+                    WORDPRESS
+                </div>
+
+                <h2 class="cliftons-name">
+                   Nature's Green Blossom - fruit and Drink products 
+                </h2>
+
+                <p class="cliftons-description">
+                  A fresh and elegant website designed for a nature-focused brand,
+                   combining natural green tones with a clean and modern layout.
+                    The website presents the brand’s products and services in
+                     a visually appealing way while creating a calm, natural,
+                      and welcoming experience for visitors. .
+                </p>
+
+                <a
+                    class="cliftons-domain"
+                    href="https://genesis.infinityfree.io/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    🌐 genesis.infinityfree.io
+                </a>
+
+                <a
+                    class="cliftons-button"
+                    href="https://genesis.infinityfree.io/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    View Live Website
+                    <span class="cliftons-arrow">↗</span>
+                </a>
+
+            </div>
+
+        </article>
+
+
+        <!-- WINNIE -->
+
+        <article class="cliftons-card">
+
+            <img
+                class="cliftons-project-image"
+                src="c5.png"
+                alt="Aaron Website"
+            >
+
+            <div class="cliftons-content">
+
+                <div class="cliftons-type">
+                    WORDPRESS
+                </div>
+
+                <h2 class="cliftons-name">
+                    FOOD BUFFET X
+                </h2>
+
+                <p class="cliftons-description">
+                  FOOD BUFFET X is a modern restaurant website designed to showcase delicious meals,<BR>
+                     including fresh sushi, main dishes, breakfast, drinks, 
+                     and desserts. Featuring an elegant design, attractive food imagery,
+                      and user-friendly navigation, the website provides
+                       visitors with an engaging dining experience. .
+                </p>
+
+                <a
+                    class="cliftons-domain"
+                    href="https://aaroncliftons.gamer.free/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    🌐 aaroncliftons.gamer.free
+                </a>
+
+                <a
+                    class="cliftons-button"
+                    href="https://aaroncliftons.gamer.free/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    View Live Website
+                    <span class="cliftons-arrow">↗</span>
+                </a>
+
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+
+        </article>
+
+
+    </div>
+
+</section>
+    </main>
+</body>
+</html>

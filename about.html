@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cliftons| About Me</title>
+</head>
+<body>
+    <nav class="nav-list">
+        <a href="index.html" class="logo" aria-label="Cliftons  home">
+            <span class="logo-mark">C</span>
+            <span class="logo-text">
+                <span class="logo-name">Cliftons</span>
+                <span class="logo-role">Developer Portfolio</span>
+            </span>
+        </a>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contact.html">Contact Me</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="about.html" class="nav-active">About Me</a></li>
+        </ul>
+    </nav>
+
+    <main class="page-shell">
+        <section class="page-hero">
+            <span class="section-kicker">About Me</span>
+            <h1>I build software with curiosity, care, and a drive to keep improving.</h1>
+            <p>I'm Cliftons, a developer who enjoys creating useful digital experiences, learning new tools, and solving problems that matter. I care about both how a product works and how it feels for the people using it.</p>
+        </section>
+
+        <section class="content-grid">
+            <article class="info-card">
+                <h2>My approach</h2>
+                <p>I like breaking down complex ideas into smaller steps, then building solutions that are practical, readable, and easy to improve later. I value clean interfaces, thoughtful structure, and steady progress.</p>
+            </article>
+            <article class="info-card">
+                <h2>What I enjoy</h2>
+                <p>Frontend design, interactive experiences, creative problem solving, and seeing a project go from a rough concept to something polished and useful.</p>
+            </article>
+            <article class="info-card">
+                <h2>What drives me</h2>
+                <p>Growth. Every project is a chance to learn something new, sharpen my skills, and create work that has a real impact on people.</p>
+            </article>
+        </section>
+        <style>
+/* ================================
+   CLIFTONS - EXPERIENCE & BACKGROUND
+================================ */
+
+.cliftons-background {
+    width: 100%;
+    max-width: 1100px;
+    margin: 55px auto 0;
+    padding: 42px 34px;
+    background: #fffdf9;
+    border: 1px solid #eadfce;
+    border-radius: 24px;
+    box-sizing: border-box;
+    font-family: Georgia, "Times New Roman", serif;
+    color: #332016;
+    box-shadow: 0 18px 45px rgba(74, 48, 25, 0.07);
+}
+
+/* Small heading */
+.cliftons-background .small-title {
+    margin: 0 0 8px;
+    font-size: 13px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #a36b3d;
+}
+
+/* Main heading */
+.cliftons-background h2 {
+    margin: 0 0 12px;
+    font-size: 32px;
+    line-height: 1.2;
+    color: #2d1a10;
+}
+
+/* Intro */
+.cliftons-background .intro {
+    max-width: 760px;
+    margin: 0 0 32px;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #684c3b;
+}
+
+/* Experience grid */
+.cliftons-experience {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+/* Experience cards */
+.cliftons-experience-card {
+    background: #fffaf2;
+    border: 1px solid #eadfce;
+    border-radius: 18px;
+    padding: 25px;
+    transition: all 0.3s ease;
+}
+
+.cliftons-experience-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 14px 30px rgba(74, 48, 25, 0.10);
+}
+
+/* Card icon */
+.cliftons-icon {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #f3dfc2;
+    color: #8f542d;
+    font-size: 20px;
+    margin-bottom: 16px;
+}
+
+/* Card title */
+.cliftons-experience-card h3 {
+    margin: 0 0 7px;
+    font-size: 21px;
+    color: #2d1a10;
+}
+
+/* Date */
+.cliftons-date {
+    display: inline-block;
+    margin-bottom: 13px;
+    font-size: 13px;
+    font-weight: 700;
+    color: #a36b3d;
+}
+
+/* Description */
+.cliftons-experience-card p {
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.7;
+    color: #684c3b;
+}
+
+/* Skills / qualification tags */
+.cliftons-qualifications {
+    margin-top: 30px;
+    padding-top: 28px;
+    border-top: 1px solid #eadfce;
+}
+
+.cliftons-qualifications h3 {
+    margin: 0 0 17px;
+    font-size: 22px;
+    color: #2d1a10;
+}
+
+.cliftons-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.cliftons-tag {
+    display: inline-block;
+    padding: 9px 16px;
+    border-radius: 30px;
+    background: #f3dfc2;
+    color: #704329;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+
+    .cliftons-background {
+        padding: 30px 20px;
+        margin-top: 35px;
+        border-radius: 18px;
+    }
+
+    .cliftons-background h2 {
+        font-size: 27px;
+    }
+
+    .cliftons-background .intro {
+        font-size: 15px;
+    }
+
+    .cliftons-experience {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .cliftons-experience-card {
+        padding: 21px;
+    }
+
+    .cliftons-experience-card h3 {
+        font-size: 19px;
+    }
+
+    .cliftons-tag {
+        font-size: 13px;
+        padding: 8px 13px;
+    }
+}
+</style>
+
+
+<div class="cliftons-background">
+
+    <div class="small-title">Experience & Background</div>
+
+    <h2>More Than One Skill Set</h2>
+
+    <p class="intro">
+        My journey combines technology, hospitality, healthcare, and
+        professional support. Each experience has helped me develop
+        discipline, communication, creativity, problem-solving, and
+        the ability to work effectively with different people.
+    </p>
+
+
+    <div class="cliftons-experience">
+
+        <!-- WEB DEVELOPMENT -->
+        <div class="cliftons-experience-card">
+
+            <div class="cliftons-icon">💻</div>
+
+            <h3>Web Development</h3>
+
+            <span class="cliftons-date">
+                
+                Jan-Dec 2026
+                Current Focus
+            </span>
+
+            <p>
+                I build modern, responsive websites and digital experiences
+                using front-end technologies, WordPress, Elementor, and
+                other web development tools.
+            </p>
+
+        </div>
+
+
+        <!-- VIRTUAL ASSISTANT -->
+        <div class="cliftons-experience-card">
+
+            <div class="cliftons-icon">📋</div>
+
+            <h3>Virtual Assistance</h3>
+
+            <span class="cliftons-date">
+                Current Learning
+            </span>
+
+            <p>
+                Developing skills in virtual assistance, communication,
+                organization, email management, document preparation,
+                scheduling, and other digital administrative tasks.
+            </p>
+
+        </div>
+
+
+        <!-- HOSPITALITY -->
+        <div class="cliftons-experience-card">
+
+            <div class="cliftons-icon">🍽️</div>
+
+            <h3>Hospitality & Kitchen</h3>
+
+            <span class="cliftons-date">
+                2024 – 2026
+            </span>
+
+            <p>
+                Two years of experience in hospitality, including working
+                as a chef and waiter, with additional experience as a
+                sauna attendant. These roles strengthened my teamwork,
+                customer service, discipline, and communication skills.
+            </p>
+
+        </div>
+
+
+        <!-- BAKING -->
+        <div class="cliftons-experience-card">
+
+            <div class="cliftons-icon">🧁</div>
+
+            <h3>Baking</h3>
+
+            <span class="cliftons-date">
+                Certificate
+            </span>
+
+            <p>
+                Certified in baking, with practical knowledge of food
+                preparation, presentation, kitchen organization, and
+                maintaining quality standards.
+            </p>
+
+        </div>
+
+
+        <!-- PHARMACOLOGY -->
+        <div class="cliftons-experience-card">
+
+            <div class="cliftons-icon">⚕️</div>
+
+            <h3>Pharmacology</h3>
+
+            <span class="cliftons-date">
+                2021 – 2024
+            </span>
+
+            <p>
+                Hold a certificate in Pharmacology from Alison, with
+                experience and knowledge gained in the healthcare and
+                pharmaceutical field during this period.
+            </p>
+
+        </div>
+
+
+        <!-- DATA ENTRY -->
+        <div class="cliftons-experience-card">
+
+            <div class="cliftons-icon">⌨️</div>
+
+            <h3>Data Entry</h3>
+
+            <span class="cliftons-date">
+                Professional Experience
+            </span>
+
+            <p>
+                Experienced in handling information accurately, organizing
+                records, entering data, and working with digital information
+                while maintaining attention to detail in the pharmacy as well.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- QUALIFICATIONS -->
+    <div class="cliftons-qualifications">
+
+        <h3>Qualifications & Skills</h3>
+
+        <div class="cliftons-tags">
+
+            <span class="cliftons-tag">
+                Web Development
+            </span>
+
+            <span class="cliftons-tag">
+                HTML & CSS
+            </span>
+
+            <span class="cliftons-tag">
+                JavaScript
+            </span>
+
+            <span class="cliftons-tag">
+                WordPress
+            </span>
+
+            <span class="cliftons-tag">
+                Responsive Design
+            </span>
+
+            <span class="cliftons-tag">
+                Virtual Assistance
+            </span>
+
+            <span class="cliftons-tag">
+                Data Entry
+            </span>
+
+            <span class="cliftons-tag">
+                Pharmacology Certificate
+            </span>
+
+            <span class="cliftons-tag">
+                Baking Certificate
+            </span>
+
+            <span class="cliftons-tag">
+                Hospitality
+            </span>
+
+            <span class="cliftons-tag">
+                Customer Service
+            </span>
+
+            <span class="cliftons-tag">
+                Problem Solving
+            </span>
+
+            <span class="cliftons-tag">
+                Creative Thinking
+            </span>
+
+            <span class="cliftons-tag">
+                Continuous Learning
+            </span>
+
+        </div>
+
+    </div>
+
+</div>
+
+         
+            </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
